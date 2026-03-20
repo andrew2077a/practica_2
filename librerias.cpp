@@ -29,9 +29,6 @@ void problem_2(){
     }
 }
 
-#include <iostream>
-using namespace std;
-
 void problem_4(){
     char a[100];
     cout << "Ingrese una cadena de caracteres numericos" << endl;
