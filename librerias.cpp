@@ -29,13 +29,23 @@ void problem_2(){
     }
 }
 
+#include <iostream>
+using namespace std;
+
 void problem_4(){
-    string a;
-    cout<<"Ingrese una cadena de caracteres numericos"<<endl;
-    cin>>a;
-    int h = stoi(a);
-    int *p=&h;
-    cout<<"El numero entero es "<<a<<" sumado mas dos es: "<<*p+2<<endl;
+    char a[100];
+    cout << "Ingrese una cadena de caracteres numericos" << endl;
+    cin >> a;
+
+    int h = 0;
+
+    for(int i = 0; a[i] != '\0'; i++){
+        h = h * 10 + (a[i] - '0');
+    }
+
+    int *p = &h;
+
+    cout << "El numero entero es " << h << " sumado mas dos es: " << *p + 2 << endl;
 }
 
 string mayusculas_minusculas(string a){
