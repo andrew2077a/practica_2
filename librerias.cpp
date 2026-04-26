@@ -193,6 +193,7 @@ void imprimir(char a[]) {
     }
     cout << endl;
 }
+//jii
 
 bool matriz(char a[], int l, int an) {
 
